@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/CSS" href="./styles.css">
+    <title>Odin - Etch-a-Sketch</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <h1>Etch-a-Sketch</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main-content">
+                <div class="options">
+                    <div id="color-picker">
+                        <label class="choose-color">
+                            <input type="color" value="#7bc57b">
+                            <span>Choose Color</span>
+                        </label>
+                    </div>
+                    <div id="color-mode">
+                        <div> 
+                        <span>Color Mode</span> 
+                        <label for="random" title="Random color">Random
+                            <input id="random" type="radio"  name="color-mode" value="random">
+                        </label>
+                        <label for="PDE" title="Progressive Darkening Effect">PDE
+                            <input id="PDE" type="radio"  name="color-mode" value="PDE">
+                        </label>
+                        <label for="none" title="none">None
+                            <input id="none" type="radio"  name="color-mode" value="none" checked>
+                        </label>
+                    </div>
+                    </div>
+                    <div id="pencil-eraser">
+                        <div>
+                            <span>Eraser</span>
+                            <label class="toggle-slider">
+                                <input type="checkbox" name="pencil-eraser" checked>
+                                <div class="slider"></div>
+                            </label>
+                            <span>Pencil</span>
+                        </div>
+                    </div>
+                    <div id="lines-remover">
+                        <button>Hide Lines</button>
+                    </div>
+                    <div id="grid-maker">
+                        <div>
+                            <div class="grid-ratio">
+                                <span>16 &times; 16</span>
+                            </div>
+                            <input type="range" min="1" max="150" value="16">
+                            <div class="range-scale">
+                                <span>1</span>
+                                <span>'</span>
+                                <span>'</span>
+                                <span>'</span>
+                                <span>'</span>
+                                <span>'</span>
+                                <span>'</span>
+                                <span>'</span>
+                                <span>'</span>
+                                <span>'</span>
+                                <span>150</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="square-box" id="sketch-board"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div>
+                <p>Copyright &copy; <span class="year"></span>&nbsp;<a href="https://www.github.com/shivmohan-pal"
+                        target="_blank">shivmohan-pal</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
